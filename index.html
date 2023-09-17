@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Food Ordering Made Easy | Da Yummy.com</title>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        :root {
+            --navbar-height: 59px;
+        }
+
+        #navbar {
+            display: flex;
+            align-items: center;
+            position: relative;
+            top: 0px;
+        }
+
+        /* Navigation Bar: logo and Image */
+        #logo {
+            margin: 30px 60px;
+
+        }
+
+        #logo img {
+            height: 100px;
+            margin: -26px -31px;
+        }
+
+        /* Navigation Bar: List Styling */
+
+        #navbar ul {
+            display: flex;
+            font-family: 'Roboto', sans-serif;
+        }
+
+        #navbar::before {
+            content: "";
+
+            background-color: black;
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            height: 200%;
+            width: 100%;
+            z-index: -1;
+            opacity: 0.4%;
+        }
+
+        #navbar ul li {
+            list-style: none;
+            font-size: 1.3rem;
+
+        }
+
+        #navbar ul li a {
+            color: rgb(3, 3, 3);
+            display: block;
+            padding: 3px 22px;
+            border-radius: 20px;
+            text-decoration: none;
+        }
+
+        #navbar ul li a:hover {
+            color: black;
+            background-color: white;
+
+        }
+
+        /* Home sectionS */
+        #home {
+            display: flex;
+            height: 780px;
+            flex-direction: column;
+            padding: 3px 200px;
+            justify-content: center;
+            align-items: center;
+
+        }
+
+        #home::before {
+            content: "";
+
+            background: url(bg.jpg);
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            height: 130%;
+            width: 120%;
+            z-index: -1;
+            opacity: 0.50;
+        }
+
+        #home h1 {
+            color: black;
+            text-align: center;
+        }
+
+        #home p {
+            color: rgb(0, 0, 0);
+            text-align: center;
+            font-size: 1.5rem;
+            font-family: 'Belanosima', sans-serif;
+            /* rem is equal to relative to HTML */
+        }
+
+        /* Service Section */
+        #services {
+            margin: 34px;
+            display: flex;
+        }
+
+        #services .box {
+            border: 2px solid black;
+            padding: 34px;
+            margin: 3px 6px;
+            border-radius: 23px;
+            background-color: lightgray;
+        }
+
+        #services .box img {
+            height: 150px;
+            margin: auto;
+            display: block;
+
+        }
+
+        #services .box p {
+            font-family: 'Belanosima', sans-serif;
+        }
+
+        /* clients Section */
+        #client-section {
+
+        }
+
+        /* utility Class    (when we creating a maintainable code base So, Create a utility Class it will be reusen if we create classes like this then you can show the same type of heading in different place.....By adding just one class it can add a lot of convenience if you'r doing something like*/
+
+        /* for paragraph we can make this utility class */
+        .h-primary {
+
+            font-size: 4.2rem;
+            padding: 12px;
+            font-family: 'Belanosima', sans-serif;
+        }
+
+        .h-secondary {
+            font-size: 2.2rem;
+            padding: 12px;
+        }
+
+        .btn {
+            /* btn is also a utility class.....for complete btn it has to be given padding because the padding they have is very different */
+            padding: 6px 20px;
+            border: 2px solid white;
+            background-color: #954848;
+            color: white;
+            margin: 17px;
+            font-size: 1.5rem;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+
+        .center {
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <nav id="navbar">
+        <div id="logo">
+            <img src="logo.jpg" alt="Da Yummy.com">
+
+
+        </div>
+
+        <ul>
+            <!-- li.item{a} -->
+            <!-- li.item{<a></a>*5} -->
+            <li class="item"><a href="#">Home</a></li>
+            <li class="item"><a href="#">Services</a></li>
+            <li class="item"><a href="#">About Us</a></li>
+            <li class="item"><a href="#">Contact Us</a></li>
+
+        </ul>
+    </nav>
+
+    <section id="home">
+        <h1 class="h primary">Welcome to Da Yummy</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis perspiciatis labore quaerat! Ex quam ab
+            Ullam obcaecati laboriosam maiores quibusdam.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis praesentium inventore ducimus,
+            reprehenderit quisquam eaque delectus explicabo?</p>
+        <button class="btn">Order Now</button>
+    </section>
+
+    <section class="services-container">
+        <h1 class="h-primary center">Our Services</h1>
+        <div class="" id="services">
+            <div class="box">
+                <img src="img/1.png" alt="">
+                <h2 class="h-secondary center">Food Ordering</h2>
+                <p class="center">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam explicabo illo, ad
+                    reiciendis error
+                    quibusdam placeat excepturi modi asperiores quisquam odio corporis recusandae! Expedita perferendis
+                    tenetur illum optio impedit saepe nobis sequi doloribus cumque!</p>
+            </div>
+            <div class="box">
+                <img src="img/2.png" alt="">
+                <h2 class="h-secondary center">Food Catering</h2>
+                <p class="center">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam explicabo illo, ad
+                    reiciendis error
+                    quibusdam placeat excepturi modi asperiores quisquam odio corporis recusandae! Expedita perferendis
+                    tenetur illum optio impedit saepe nobis sequi doloribus cumque!</p>
+            </div>
+            <div class="box">
+                <img src="img/3.png" alt="">
+                <h2 class="h-secondary center">Bulk Ordering</h2>
+                <p class="center">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam explicabo illo, ad
+                    reiciendis error
+                    quibusdam placeat excepturi modi asperiores quisquam odio corporis recusandae! Expedita perferendis
+                    tenetur illum optio impedit saepe nobis sequi doloribus cumque!</p>
+            </div>
+
+
+
+        </div>
+        <!-- div# is for id -->
+    </section>
+    <section id="client-section">
+        <h1 class="h primary center">Our Clients</h1>
+        <div id="clients">
+            <div class="client item">
+                <img src="img/logo1.png" alt="Our Clients">
+                <!-- <img src="img/logo2.png" alt="Our Clients"> -->
+            </div>
+        </div>
+
+    </section>
+</body>
+
+</html>

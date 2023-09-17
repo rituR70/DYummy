@@ -1,0 +1,141 @@
+
+/* CSS Reset */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* CSS Variables */
+:root {
+    --navbar-height: 59px;
+}
+
+/* Navigation Bar */
+#navbar {
+    display: flex;
+    align-items: center;
+}
+
+/* Navigation Bar: logo and Image */
+#logo{
+    margin: 34px 45px;
+}
+
+#logo img{
+    height: 56px; 
+    margin: 34px 45px;
+}
+
+/* Navigation Bar: List Styling */
+#navbar{
+    position: relative;
+}
+#navbar ul{
+    display: flex;
+
+}
+
+#navbar::before{
+    content:"";
+
+    background-color: black;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.4;
+}
+
+#navbar ul li{
+    /* color: white; */
+    list-style: none;
+    font-size: 1.3rem;
+}
+
+#navbar ul li a{
+    color: white;
+    display: block;
+    padding: 3px 22px;
+    border-radius: 20px;
+    text-decoration: none;
+}
+
+#navbar ul li a:hover{
+    color: black;
+    background-color: white;
+}
+
+/* Home sectionS */
+#home{
+    display: flex;
+    height: 400px;
+    flex-direction: column;
+    padding: 3px 200px;
+    justify-content: center;
+    align-items: center;
+}
+#home::before{
+    content:"";
+
+    background: url(bg.jpg);
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.90;
+}
+#home h1{
+    color: white;
+    text-align: center;
+}
+#home p{
+    color: white;
+    text-align: center;
+    font-size: 1.5rem;
+    font-family: 'Belanosima', sans-serif;
+    font-family: 'Fasthand', cursive;
+    font-family: 'Libre Baskerville', serif;
+    font-family: 'Oswald', sans-serif;
+    font-family: 'Roboto', sans-serif;;
+}
+
+/* Services Section */
+#services{
+    margin: 34px;
+    display: flex;
+}
+
+#service .box{
+    border: 2px solid black;
+}
+
+#service .box img{
+    height: 200px;
+
+}
+
+/* Margin:auto will work when display is block first then and set something of height and width then margin auto will works */
+/* utility Class */
+.h-primary{
+    font-size: 2.8rem;
+    /* rem is equal to relative to HTML  */
+    padding: 12px;
+}
+
+.h-secondary{
+    font-size: 2.8rem;
+    padding: 12px;
+}
+
+.btn{
+    /* btn is also a utility class.....for complete btn it has to be given padding because the padding they have is very different */
+    padding: 6px 20px;
+    border: 2px solid white;
+    background-color: brown;
+    color: white;
+    margin: 17px;
+}
+
+.center{
+    text-align: center;
+}
